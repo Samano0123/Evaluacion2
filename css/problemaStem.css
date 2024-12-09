@@ -1,0 +1,148 @@
+/* General */
+body {
+    background-color: #fdf4fa; /* Fondo rosa muy claro */
+    color: #4a154b; /* Texto en tono morado oscuro */
+    font-family: 'Poppins', sans-serif; /* Fuente moderna y elegante */
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header y Footer */
+header, footer {
+    color: white;
+    background-color: #b83b5e; /* Morado intenso */
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.3em;
+    font-family: 'Dancing Script', cursive; /* Fuente cursiva elegante */
+    letter-spacing: 1px;
+}
+
+footer {
+    font-size: 0.9em;
+    margin-top: auto;
+    background-color: #822659; /* Morado oscuro */
+}
+
+/* Botones */
+button {
+    font-size: 1em;
+    width: auto;
+    height: 45px;
+    background-color: #f38181; /* Rosa suave */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 8px 20px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #d65d7a; /* Rosa más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Efecto de agrandamiento */
+}
+
+/* Contenedor principal */
+#contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "a1 a1 a2 a2"
+        "a3 a3 a4 a4"
+        "a5 a5 a6 a6";
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Secciones */
+section {
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Problema */
+.problema {
+    grid-area: a1;
+    background-color: #f8c5d0; /* Rosa pastel */
+    color: #a41623; /* Rojo oscuro */
+}
+
+/* Esquema */
+.esquemaProblema {
+    grid-area: a2;
+    background-color: #d9a7c7; /* Rosa lila */
+    color: #4a154b; /* Morado oscuro */
+}
+
+.imgProblema {
+    border-radius: 15px;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Datos */
+.datos {
+    grid-area: a3;
+    background-color: #ffe3f4; /* Rosa muy suave */
+    color: #a91653; /* Morado oscuro */
+}
+
+/* Fórmulas */
+.formulas {
+    grid-area: a4;
+    background-color: #dab6fc; /* Lila suave */
+    color: #5d0f9d; /* Morado profundo */
+}
+
+/* Cálculos */
+.calculos {
+    grid-area: a5;
+    background-color: #f7d1f8; /* Rosa lavanda */
+    color: #82145f; /* Rosa intenso */
+}
+
+/* Resultado */
+.resultado {
+    grid-area: a6;
+    background-color: #f38181; /* Rosa coral */
+    color: white;
+}
+
+/* Ajustes generales */
+h2 {
+    color: #4a154b; /* Tono morado */
+    margin-top: 0;
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    line-height: 1.6;
+    margin: 10px 0;
+    text-align: justify;
+    color: #4a154b; /* Morado oscuro */
+}
+
+/* Footer */
+footer {
+    background-color: #6a0572; /* Morado oscuro */
+    color: #fdf4fa; /* Texto claro */
+    font-family: 'Dancing Script', cursive;
+    padding: 15px 0;
+    font-size: 1em;
+}
